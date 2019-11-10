@@ -1,0 +1,130 @@
+1.DIWALI LIGHTS
+
+Diwali is considered as Festival of Lights. This diwali, Geek wants to decorate his house, with a bunch of 'n' led lights. Each light has its own illuminating value. Geek wants to arrange these led's in the increasing order of their illuminating value. To do this, he is allowed to shuffle(interchange) a pair of any two led's. He can perform this operating any number of times. Find the number of operations needed to obtain the required pattern.
+
+Note : Illuminating values are consecutive integers.
+Input
+
+    n, integer denoting number of led's in a bunch.
+    led[], array of integers denoting illuminating value of 'n' led's.
+
+Output
+
+Find the number of operations needed to obtain the required pattern.
+Example
+
+Input:
+
+3
+2 3 1
+
+Output:
+
+2
+
+Explanation :
+
+Our required pattern is 1 2 3, we can do this with two operations.
+First Operation : Shuffle 2 & 1, array becomes 1 3 2.
+Second Operation : Shuffle 3 & 2, array becomes 1 2 3.
+
+
+
+
+2.GREAT DIWALI FAIR
+Welcome to the Great Diwali Fair. Geek is all set to purchase some great gifts for his younger brother mini. At present, Geek has n rupees with him, which he can use to purchase some great gifts for mini, in order to make him happy. Mini will only be happy if geek purchases atleast floor(m/2) gifts, where m is the number of gifts available for a purchase in a stall. However, mini will be really upset, if he fails to purchase him a gift. Given m different types of gifts, each having different cost, return h, if mini gets happy else return w. Note, geek can purchase any gifts.
+Input
+
+    t, integer denoting number of testcases. each t line contains..
+    n, integer denoting money geeks has.
+    m, integer denoting number of gifts.
+    array denoting price of m gifts.
+
+Output
+
+Print 'h' if mini is happy else print 'w'.
+Example
+
+Input:
+
+2
+10
+4
+4 6 3 1
+1
+4
+4 6 3 1
+
+Output:
+
+h
+w
+
+Explanation :
+
+For sample case 1, geek buys 3 gifts worth 1,3,4 making mini happy.
+
+
+3.WINNING THE RACE
+
+Geek is organizing a race of N contestants.This is an interesting race in which a winner is predicted after checking at every odd seconds. If race time is 6 seconds, then we will look up who is leading at particular checktime, ie at 1st second, 3 second, and 5th second. Participant who is leading more number of times is considered to be the winner of a race.
+Note :
+
+    At a particular timepoint, if two or more participants are at same distance, then both are considered to be leading the race.
+    At the end of timepoints, if two or more participants have equal lead point, the one who comes first in input sequence is considered to be a winner.
+
+Input
+
+    N, integer denoting number of participants.
+    T, integer denoting total time in seconds of this marathon.
+    Next N line follows : We have T+1 integers seperated by space. First T lines are as follows : i th integer denotes the number of steps taken by participant at i th second. (T+1)th integer denotes distance of each step.
+
+Output
+
+Index of Marathon winner, index starts from 1.
+Example
+
+Input:
+2
+3
+2 3 1 3
+1 1 1 4
+
+Output:
+1
+
+Explanation:
+
+2( No. of participants )
+3( Total time of race )
+2 3 1 3 ( data for first participant, First 3 integers denotes number of steps per second and last integer is distance covered in each step.) 1 1 1 4 ( similarly, data for second participant.)
+
+At time 1 : Participant 1 is leading. as (6)>(4) At time 3 : Participant 1 is leading. as 18 > 12
+
+
+4.STABLISING CHARACTERS
+
+A bracket may be any character between [a-z] or [A-Z]. Generally, we consider lowercase characters as opening brackets and uppercase characters as closing brackets. Two brackets are considered to be a stable pair if the an opening bracket of the exact same type. For instance, stable pairs of brackets: a,A | b,B | t.T . A pair of brackets is not stable if the set of brackets it encloses are not matched. For example, abcCBA is stable whereas BcCb is not. A sequence of brackets is stable if the following conditions are met:
+
+    It contains no unmatched brackets.
+    The subset of brackets enclosed within the confines of a matched pair of brackets is also a matched pair of brackets. You are provided with N strings, your job is to find whether it is stable or not. Print Y for yes or N for No.
+
+Note : 1 <= N <= 10^4
+Input
+
+    Integer N, denoting number of strings.
+    Each N lines, includes a string of character.
+
+Output
+
+Print Y for yes or N for No for each string in new line.
+Example
+
+Input:
+2
+ababBABA
+aaacccCCCAA
+
+Output:
+Y
+N
